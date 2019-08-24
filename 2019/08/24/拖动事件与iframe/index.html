@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>BLOG FOR TCXiaoming</title>
+  <title>拖动事件与iframe | BLOG FOR TCXiaoming</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="title: 初见typeScript">
-<meta property="og:type" content="website">
-<meta property="og:title" content="BLOG FOR TCXiaoming">
-<meta property="og:url" content="http://yoursite.com/typeScript/初见typeScript.html">
+  <meta name="description" content="项目中做菜单伸缩功能遇见一处bug，布局为左侧菜单右侧内容页签，当右侧内容加载iframe的时候，拖动菜单鼠标会卡主。 原因：onmusemove事件遇到经过iframe区域会丢失当前全局页面的事件 解决方案：添加一个遮罩层覆盖iframe区域，onmousemove事件就不会丢失 我的实现：Vue项目，菜单和页签为不同组件，Vuex控制页签遮罩层的显示">
+<meta property="og:type" content="article">
+<meta property="og:title" content="拖动事件与iframe">
+<meta property="og:url" content="http://yoursite.com/2019/08/24/拖动事件与iframe/index.html">
 <meta property="og:site_name" content="BLOG FOR TCXiaoming">
-<meta property="og:description" content="title: 初见typeScript">
+<meta property="og:description" content="项目中做菜单伸缩功能遇见一处bug，布局为左侧菜单右侧内容页签，当右侧内容加载iframe的时候，拖动菜单鼠标会卡主。 原因：onmusemove事件遇到经过iframe区域会丢失当前全局页面的事件 解决方案：添加一个遮罩层覆盖iframe区域，onmousemove事件就不会丢失 我的实现：Vue项目，菜单和页签为不同组件，Vuex控制页签遮罩层的显示">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-11T04:53:19.698Z">
+<meta property="og:updated_time" content="2019-08-24T03:11:06.462Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="BLOG FOR TCXiaoming">
-<meta name="twitter:description" content="title: 初见typeScript">
+<meta name="twitter:title" content="拖动事件与iframe">
+<meta name="twitter:description" content="项目中做菜单伸缩功能遇见一处bug，布局为左侧菜单右侧内容页签，当右侧内容加载iframe的时候，拖动菜单鼠标会卡主。 原因：onmusemove事件遇到经过iframe区域会丢失当前全局页面的事件 解决方案：添加一个遮罩层覆盖iframe区域，onmousemove事件就不会丢失 我的实现：Vue项目，菜单和页签为不同组件，Vuex控制页签遮罩层的显示">
   
     <link rel="alternative" href="/atom.xml" title="BLOG FOR TCXiaoming" type="application/atom+xml">
   
@@ -154,13 +154,37 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="前端杂记-拖动事件与iframe" class="article article-type-前端杂记 " itemscope itemprop="blogPost">
   <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      拖动事件与iframe
+    </h1>
+  
+
+        
+        <a href="/2019/08/24/拖动事件与iframe/" class="archive-article-date">
+  	<time datetime="2019-08-24T02:58:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-24</time>
+</a>
+        
+      </header>
+    
+    <!-- 目录内容 -->
+    
+    <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<p>title: 初见typeScript</p>
+<ul>
+<li>项目中做菜单伸缩功能遇见一处bug，布局为左侧菜单右侧内容页签，当右侧内容加载iframe的时候，拖动菜单鼠标会卡主。</li>
+<li>原因：onmusemove事件遇到经过iframe区域会丢失当前全局页面的事件</li>
+<li>解决方案：添加一个遮罩层覆盖iframe区域，onmousemove事件就不会丢失</li>
+<li>我的实现：Vue项目，菜单和页签为不同组件，Vuex控制页签遮罩层的显示</li>
+</ul>
+<hr>
 
       
 
@@ -240,7 +264,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/typeScript/初见typeScript.html" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/24/拖动事件与iframe/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -302,7 +326,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
